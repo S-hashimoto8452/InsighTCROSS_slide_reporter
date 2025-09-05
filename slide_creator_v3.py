@@ -37,7 +37,7 @@ def _get_password_hash() -> str:
 # UI 基本
 # ======================================================
 st.set_page_config(page_title="TCROSS SlideCreator", layout="wide")
-st.title("スライドクリエーター（PDF → 日本語原稿 → DOCX）")
+st.title("InsighTCROSS SlideCreator（PDF → TCROSSNews → DOCX）")
 
 # ======================================================
 # 認証（毎回、サイドバーで入力）
@@ -353,3 +353,4 @@ if "gen_text" in st.session_state and "docx_bytes" in st.session_state:
     )
     with st.expander("生成テキスト（確認用）", expanded=False):
         st.write(st.session_state["gen_text"])
+
